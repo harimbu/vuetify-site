@@ -5,7 +5,13 @@
       <v-row>
         <v-col cols="12" sm="4" v-for="item in items" :key="item.id">
           <v-card flat tile>
-            <v-img :src="item.src" :aspect-ratio="1" />
+            <v-img :src="item.src" :aspect-ratio="1">
+              <template v-slot:placeholder>
+                <v-row class="fill-height ma-0" align="center" justify="center">
+                  <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                </v-row>
+              </template>
+            </v-img>
           </v-card>
         </v-col>
       </v-row>

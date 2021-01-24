@@ -1,5 +1,5 @@
 <template>
-  <div class="block postBlock">
+  <div class="block bg_grey">
     <v-container>
       <h2 class="text-center">Latest Post</h2>
       <v-row>
